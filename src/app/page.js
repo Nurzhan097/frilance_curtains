@@ -9,12 +9,11 @@ export default function Home() {
   return (
     <div>
 
-      <div className="bg-red-500 text-white p-4">Проверка Tailwind</div>
-      {/* <FirstBanner></FirstBanner> */}
+      <FirstBanner></FirstBanner>
       <HeroInfo></HeroInfo>
       {/* <BrandCarousel></BrandCarousel> */}
       <ProductList></ProductList>
-      {/* <ForkFlow></ForkFlow> */}
+      <ForkFlow></ForkFlow>
     </div>
   );
 }

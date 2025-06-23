@@ -23,9 +23,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="">
-      <body
-      >
-        <p>SD:Lfkj:SLDkjf</p>
+      <body>
         <div className="">
           <Header></Header>
 
