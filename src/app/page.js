@@ -11,7 +11,7 @@ export default function Home() {
 
       <FirstBanner></FirstBanner>
       <HeroInfo></HeroInfo>
-      {/* <BrandCarousel></BrandCarousel> */}
+      <BrandCarousel></BrandCarousel>
       <ProductList></ProductList>
       <ForkFlow></ForkFlow>
     </div>

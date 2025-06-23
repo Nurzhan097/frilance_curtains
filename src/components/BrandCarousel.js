@@ -1,23 +1,6 @@
 'use client'
 
-import 'keen-slider/keen-slider.min.css'
 import Image from 'next/image'
-
-module.exports = {
-  theme: {
-    extend: {
-      keyframes: {
-        scroll: {
-          '0%': { transform: 'translateX(0%)' },
-          '100%': { transform: 'translateX(-50%)' },
-        },
-      },
-      animation: {
-        scroll: 'scroll 25s linear infinite',
-      },
-    },
-  },
-}
 
 const brands = [
   '/brands/beautiful.png',
@@ -27,12 +10,11 @@ const brands = [
 ]
 
 export default function BrandCarousel() {
-  // удваиваем массив, чтобы получился бесконечный цикл
-  const repeatedBrands = [...brands, ...brands]
+  const repeatedBrands = [...brands, ...brands] // удваиваем для бесшовной прокрутки
 
   return (
-    <div className="overflow-hidden w-full py-4">
-      <div className="flex animate-scroll gap-12">
+    <div className="overflow-hidden  w-full py-4">
+      <div className="flex gap-12 animate-scroll hover:[animation-play-state:paused] w-max">
         {repeatedBrands.map((src, index) => (
           <div key={index} className="flex-shrink-0">
             <Image
