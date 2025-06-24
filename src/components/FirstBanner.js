@@ -13,12 +13,15 @@ export default function FirstBanner() {
     <div className="bg-[#f5fdf9]">
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <div
-          className="absolute inset-0 -z-20 bg-cover bg-center filter blur-sm opacity-30"
+          className="absolute inset-0 -z-20 bg-cover bg-center opacity-40"
           style={{
-            backgroundImage: "linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(255,255,255,0.3)), url('/bg/green.jpg')",
+            backgroundImage: "url('/bg/green.jpg')",
+            filter: 'blur(4px) brightness(1.05)',
           }}
           aria-hidden="true"
-        />
+        >
+          <div className="hidden sm:block absolute inset-0 bg-gradient-to-b from-white/50 to-white/20" />
+        </div>
         <div
           aria-hidden="true"
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
