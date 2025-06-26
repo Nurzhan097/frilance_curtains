@@ -16,10 +16,10 @@ export default function Footer() {
         <div>
           <h3 className="text-white font-semibold text-lg mb-4">Полезные ссылки</h3>
           <ul className="space-y-2 text-sm text-gray-400">
-            <li><a href="/about" className="hover:text-white">О нас</a></li>
-            <li><a href="/services" className="hover:text-white">Услуги</a></li>
-            <li><a href="/products" className="hover:text-white">Каталог</a></li>
-            <li><a href="/contact" className="hover:text-white">Контакты</a></li>
+            <li><a href="#" className="hover:text-white">О нас</a></li>
+            <li><a href="#" className="hover:text-white">Услуги</a></li>
+            <li><a href="#" className="hover:text-white">Каталог</a></li>
+            <li><a href="#" className="hover:text-white">Контакты</a></li>
           </ul>
         </div>
 
@@ -27,10 +27,10 @@ export default function Footer() {
         <div>
           <h3 className="text-white font-semibold text-lg mb-4">Карта сайта</h3>
           <ul className="space-y-2 text-sm text-gray-400">
-            <li><a href="/" className="hover:text-white">Главная</a></li>
-            <li><a href="/blog" className="hover:text-white">Блог</a></li>
-            <li><a href="/faq" className="hover:text-white">Вопросы и ответы</a></li>
-            <li><a href="/privacy" className="hover:text-white">Политика конфиденциальности</a></li>
+            <li><a href="#" className="hover:text-white">Главная</a></li>
+            <li><a href="#" className="hover:text-white">Блог</a></li>
+            <li><a href="#" className="hover:text-white">Вопросы и ответы</a></li>
+            <li><a href="#" className="hover:text-white">Политика конфиденциальности</a></li>
           </ul>
         </div>
 
