@@ -2,67 +2,52 @@ import { CalendarDaysIcon, HandRaisedIcon } from '@heroicons/react/24/outline'
 
 export default function Footer() {
   return (
-    <div className="relative isolate overflow-hidden bg-gray-900 py-16 sm:py-24 lg:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
-          <div className="max-w-xl lg:max-w-lg">
-            <h2 className="text-4xl font-semibold tracking-tight text-white">Subscribe to our newsletter</h2>
-            <p className="mt-4 text-lg text-gray-300">
-              Nostrud amet eu ullamco nisi aute in ad minim nostrud adipisicing velit quis. Duis tempor incididunt
-              dolore.
-            </p>
-            <div className="mt-6 flex max-w-md gap-x-4">
-              <label htmlFor="email-address" className="sr-only">
-                Email address
-              </label>
-              <input
-                id="email-address"
-                name="email"
-                type="email"
-                required
-                placeholder="Enter your email"
-                autoComplete="email"
-                className="min-w-0 flex-auto rounded-md bg-white/5 px-3.5 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-emerald-500 sm:text-sm/6"
-              />
-              <button
-                type="submit"
-                className="flex-none rounded-md bg-emerald-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-emerald-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-500"
-              >
-                Subscribe
-              </button>
-            </div>
-          </div>
-          <dl className="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">
-            <div className="flex flex-col items-start">
-              <div className="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
-                <CalendarDaysIcon aria-hidden="true" className="size-6 text-white" />
-              </div>
-              <dt className="mt-4 text-base font-semibold text-white">Weekly articles</dt>
-              <dd className="mt-2 text-base/7 text-gray-400">
-                Non laboris consequat cupidatat laborum magna. Eiusmod non irure cupidatat duis commodo amet.
-              </dd>
-            </div>
-            <div className="flex flex-col items-start">
-              <div className="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
-                <HandRaisedIcon aria-hidden="true" className="size-6 text-white" />
-              </div>
-              <dt className="mt-4 text-base font-semibold text-white">No spam</dt>
-              <dd className="mt-2 text-base/7 text-gray-400">
-                Officia excepteur ullamco ut sint duis proident non adipisicing. Voluptate incididunt anim.
-              </dd>
-            </div>
-          </dl>
+    <footer className="bg-gray-900 text-gray-300 py-12 px-6">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+        {/* About */}
+        <div>
+          <h3 className="text-white font-semibold text-lg mb-4">О компании</h3>
+          <p className="text-sm text-gray-400">
+            Мы специализируемся на продаже и установке качественных штор. Более 10 лет на рынке, более 5000 довольных клиентов.
+          </p>
+        </div>
+
+        {/* Links */}
+        <div>
+          <h3 className="text-white font-semibold text-lg mb-4">Полезные ссылки</h3>
+          <ul className="space-y-2 text-sm text-gray-400">
+            <li><a href="/about" className="hover:text-white">О нас</a></li>
+            <li><a href="/services" className="hover:text-white">Услуги</a></li>
+            <li><a href="/products" className="hover:text-white">Каталог</a></li>
+            <li><a href="/contact" className="hover:text-white">Контакты</a></li>
+          </ul>
+        </div>
+
+        {/* Sitemap */}
+        <div>
+          <h3 className="text-white font-semibold text-lg mb-4">Карта сайта</h3>
+          <ul className="space-y-2 text-sm text-gray-400">
+            <li><a href="/" className="hover:text-white">Главная</a></li>
+            <li><a href="/blog" className="hover:text-white">Блог</a></li>
+            <li><a href="/faq" className="hover:text-white">Вопросы и ответы</a></li>
+            <li><a href="/privacy" className="hover:text-white">Политика конфиденциальности</a></li>
+          </ul>
+        </div>
+
+        {/* Contact */}
+        <div>
+          <h3 className="text-white font-semibold text-lg mb-4">Контакты</h3>
+          <ul className="text-sm text-gray-400 space-y-2">
+            <li>+7 (700) 123-45-67</li>
+            <li>info@example.com</li>
+            <li>г. Стамбул, ул. Примерная, 12</li>
+            <li>Работаем ежедневно с 9:00 до 20:00</li>
+          </ul>
         </div>
       </div>
-      <div aria-hidden="true" className="absolute top-0 left-1/2 -z-10 -translate-x-1/2 blur-3xl xl:-top-6">
-        <div
-          style={{
-            clipPath:
-              'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
-          }}
-          className="aspect-1155/678 w-288.75 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30"
-        />
+      <div className="mt-10 border-t border-gray-700 pt-6 text-center text-sm text-gray-500">
+        &copy; 2025 Название компании. Все права защищены.
       </div>
-    </div>
+    </footer>
   )
 }

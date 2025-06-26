@@ -17,6 +17,7 @@ import {
 } from '@headlessui/react'
 import { Bars3Icon, MagnifyingGlassIcon, ShoppingBagIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image';
+import { FaWhatsapp, FaInstagram, FaTiktok, FaYoutube, FaFacebook } from 'react-icons/fa'
 
 import categories from '@/data/categories';
 
@@ -242,10 +243,49 @@ export default function Example() {
                 </div>
               </PopoverGroup>
 
+              {/* right icons */}
+              <div className="ml-auto flex items-center">
+                <div className="flex gap-2 ml-4 text-gray-600">
+                  <a href="https://wa.me/77001234567" target="_blank" rel="noopener noreferrer">
+                    <FaWhatsapp className="w-5 h-5 hover:text-green-500 transition" />
+                  </a>
+                  <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer">
+                    <FaInstagram className="w-5 h-5 hover:text-pink-500 transition" />
+                  </a>
+                  <a href="https://www.tiktok.com/@yourprofile" target="_blank" rel="noopener noreferrer">
+                    <FaTiktok className="w-5 h-5 hover:text-black transition" />
+                  </a>
+                  <a href="https://www.youtube.com/@yourchannel" target="_blank" rel="noopener noreferrer">
+                    <FaYoutube className="w-5 h-5 hover:text-red-600 transition" />
+                  </a>
+                  <a href="https://www.facebook.com/yourprofile" target="_blank" rel="noopener noreferrer">
+                    <FaFacebook className="w-5 h-5 hover:text-blue-600 transition" />
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </nav>
       </header>
+
+      {/* Social Icons */}
+      <div className="fixed right-4 top-1/3 z-50 space-y-4 flex flex-col items-center text-gray-600">
+        <a href="https://wa.me/77001234567" target="_blank" rel="noopener noreferrer">
+          <FaWhatsapp className="w-7 h-7 hover:text-green-500 transition" />
+        </a>
+        <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer">
+          <FaInstagram className="w-7 h-7 hover:text-pink-500 transition" />
+        </a>
+        <a href="https://www.tiktok.com/@yourprofile" target="_blank" rel="noopener noreferrer">
+          <FaTiktok className="w-7 h-7 hover:text-black transition" />
+        </a>
+        <a href="https://www.youtube.com/@yourchannel" target="_blank" rel="noopener noreferrer">
+          <FaYoutube className="w-7 h-7 hover:text-red-600 transition" />
+        </a>
+        <a href="https://www.facebook.com/yourprofile" target="_blank" rel="noopener noreferrer">
+          <FaFacebook className="w-7 h-7 hover:text-blue-600 transition" />
+        </a>
+      </div>
     </div>
   )
 }

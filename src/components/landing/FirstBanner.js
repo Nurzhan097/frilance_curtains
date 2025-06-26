@@ -10,7 +10,7 @@ const navigation = [
 export default function FirstBanner() {
 
   return (
-    <div className="bg-[#f5fdf9]">
+    <div className="bg-[#f5fdf9] relative overflow-hidden">
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <div
           className="absolute inset-0 -z-20 bg-cover bg-center opacity-40"

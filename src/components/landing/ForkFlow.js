@@ -37,21 +37,32 @@ export default function ForkFlow() {
               <p className="mt-6 text-lg/8 text-gray-600">
                 Müşterilerimize değer veriyoruz. Yıllarca ilk günkü gibi kullanabileceğiniz en kaliteli ürünleri, 10 yılı aşkın tecrübemiz ve uygun fiyat garantimizle siz değerli müşterilerimizin hizmetine sunuyoruz.
               </p>
-              <dl className="mt-10 max-w-xl space-y-8 text-base/7 text-gray-600 lg:max-w-none">
-                {features.map((feature) => (
-                  <div key={feature.name} className="relative pl-9">
-                    <dt className="inline font-semibold text-gray-900">
-                      <feature.icon aria-hidden="true" className="absolute top-1 left-1 size-5 text-emerald-600" />
-                      {feature.name}
-                    </dt>{' '}
-                    <dd className="inline">{feature.description}</dd>
-                  </div>
-                ))}
-              </dl>
+
+              <div className="space-y-4 text-gray-700 text-base mt-8">
+                <div>
+                  <p className="font-semibold text-gray-900">Merkez (İkitelli)</p>
+                  <p>İkitelli OSB Mah. Atatürk Bulv. No:23, Başakşehir / İstanbul</p>
+                </div>
+                <div>
+                  <p className="font-semibold text-gray-900">Avcılar Mağaza</p>
+                  <p>Avcılar Merkez Mah. Marmara Cad. No:45, İstanbul</p>
+                </div>
+                <div>
+                  <p className="font-semibold text-gray-900">Beylikdüzü Mağaza</p>
+                  <p>Adnan Kahveci Bulvarı No:12, Beylikdüzü / İstanbul</p>
+                </div>
+                <div>
+                  <p className="font-semibold text-gray-900">Bahçelievler Mağaza</p>
+                  <p>Şirinevler Mah. Mehmet Akif Cad. No:7, Bahçelievler / İstanbul</p>
+                </div>
+              </div>
+
+
             </div>
           </div>
 
           <MapWrapper></MapWrapper>
+
         </div>
       </div>
     </div>

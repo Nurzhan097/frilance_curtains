@@ -1,8 +1,10 @@
 import ProductList from "@/components/products/ProductList"
-import HeroInfo from "@/components/HeroInfo";
-import BrandCarousel from "@/components/BrandCarousel";
-import ForkFlow from "@/components/ForkFlow";
-import FirstBanner from "@/components/FirstBanner";
+import HeroInfo from "@/components/landing/HeroInfo";
+import Features from "@/components/landing/Features";
+import BrandCarousel from "@/components/landing/BrandCarousel";
+import ForkFlow from "@/components/landing/ForkFlow";
+import FirstBanner from "@/components/landing/FirstBanner";
+import BestCategories from "@/components/categories/BestCategories";
 
 
 export default function Home() {
@@ -10,9 +12,11 @@ export default function Home() {
     <div>
 
       <FirstBanner></FirstBanner>
+      <BestCategories></BestCategories>
       <HeroInfo></HeroInfo>
       <BrandCarousel></BrandCarousel>
       <ProductList></ProductList>
+      <Features></Features>
       <ForkFlow></ForkFlow>
     </div>
   );
