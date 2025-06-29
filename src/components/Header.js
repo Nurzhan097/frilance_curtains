@@ -268,23 +268,24 @@ export default function Example() {
         </nav>
       </header>
 
-      {/* Social Icons */}
-      <div className="fixed right-4 top-1/3 z-50 space-y-4 flex flex-col items-center text-gray-600">
-        <a href="https://wa.me/77001234567" target="_blank" rel="noopener noreferrer">
-          <FaWhatsapp className="w-7 h-7 hover:text-green-500 transition" />
-        </a>
-        <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer">
-          <FaInstagram className="w-7 h-7 hover:text-pink-500 transition" />
-        </a>
-        <a href="https://www.tiktok.com/@yourprofile" target="_blank" rel="noopener noreferrer">
-          <FaTiktok className="w-7 h-7 hover:text-black transition" />
-        </a>
-        <a href="https://www.youtube.com/@yourchannel" target="_blank" rel="noopener noreferrer">
-          <FaYoutube className="w-7 h-7 hover:text-red-600 transition" />
-        </a>
-        <a href="https://www.facebook.com/yourprofile" target="_blank" rel="noopener noreferrer">
-          <FaFacebook className="w-7 h-7 hover:text-blue-600 transition" />
-        </a>
+      <div className="fixed bottom-4 inset-x-4 z-50 block">
+        <div className="mx-auto max-w-md backdrop-blur-md bg-white/30 border border-white/40 rounded-2xl shadow-lg flex justify-center gap-6 py-3 px-6">
+          <a href="https://wa.me/77001234567" target="_blank" rel="noopener noreferrer">
+            <FaWhatsapp className="w-8 h-8 text-green-500 hover:scale-110 transition" />
+          </a>
+          <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer">
+            <FaInstagram className="w-8 h-8 text-pink-500 hover:scale-110 transition" />
+          </a>
+          <a href="https://www.tiktok.com/@yourprofile" target="_blank" rel="noopener noreferrer">
+            <FaTiktok className="w-8 h-8 text-black hover:scale-110 transition" />
+          </a>
+          <a href="https://www.youtube.com/@yourchannel" target="_blank" rel="noopener noreferrer">
+            <FaYoutube className="w-8 h-8 text-red-600 hover:scale-110 transition" />
+          </a>
+          <a href="https://www.facebook.com/yourprofile" target="_blank" rel="noopener noreferrer">
+            <FaFacebook className="w-8 h-8 text-blue-600 hover:scale-110 transition" />
+          </a>
+        </div>
       </div>
     </div>
   )
