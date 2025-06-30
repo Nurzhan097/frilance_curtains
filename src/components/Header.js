@@ -246,9 +246,6 @@ export default function Example() {
               {/* right icons */}
               <div className="ml-auto flex items-center">
                 <div className="flex gap-2 ml-4 text-gray-600">
-                  <a href="https://wa.me/77001234567" target="_blank" rel="noopener noreferrer">
-                    <FaWhatsapp className="w-5 h-5 hover:text-green-500 transition" />
-                  </a>
                   <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer">
                     <FaInstagram className="w-5 h-5 hover:text-pink-500 transition" />
                   </a>
@@ -258,9 +255,10 @@ export default function Example() {
                   <a href="https://www.youtube.com/@yourchannel" target="_blank" rel="noopener noreferrer">
                     <FaYoutube className="w-5 h-5 hover:text-red-600 transition" />
                   </a>
-                  <a href="https://www.facebook.com/yourprofile" target="_blank" rel="noopener noreferrer">
-                    <FaFacebook className="w-5 h-5 hover:text-blue-600 transition" />
+                  <a href="https://wa.me/77001234567" target="_blank" rel="noopener noreferrer">
+                    <FaWhatsapp className="w-5 h-5 hover:text-green-500 transition" />
                   </a>
+
                 </div>
               </div>
             </div>
@@ -270,9 +268,6 @@ export default function Example() {
 
       <div className="fixed bottom-4 inset-x-4 z-50 block">
         <div className="mx-auto max-w-md backdrop-blur-md bg-white/30 border border-white/40 rounded-2xl shadow-lg flex justify-center gap-6 py-3 px-6">
-          <a href="https://wa.me/77001234567" target="_blank" rel="noopener noreferrer">
-            <FaWhatsapp className="w-8 h-8 text-green-500 hover:scale-110 transition" />
-          </a>
           <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer">
             <FaInstagram className="w-8 h-8 text-pink-500 hover:scale-110 transition" />
           </a>
@@ -282,9 +277,10 @@ export default function Example() {
           <a href="https://www.youtube.com/@yourchannel" target="_blank" rel="noopener noreferrer">
             <FaYoutube className="w-8 h-8 text-red-600 hover:scale-110 transition" />
           </a>
-          <a href="https://www.facebook.com/yourprofile" target="_blank" rel="noopener noreferrer">
-            <FaFacebook className="w-8 h-8 text-blue-600 hover:scale-110 transition" />
+          <a href="https://wa.me/77001234567" target="_blank" rel="noopener noreferrer">
+            <FaWhatsapp className="w-8 h-8 text-green-500 hover:scale-110 transition" />
           </a>
+
         </div>
       </div>
     </div>
